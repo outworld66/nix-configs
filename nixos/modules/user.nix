@@ -4,14 +4,14 @@
   users = {
     defaultUserShell = pkgs.zsh;
 
-    users.amper = {
+    users.outworld = {
       isNormalUser = true;
-      description = "Ampersand";
+      description = "kopylov.k";
       extraGroups = [ "networkmanager" "wheel" "input" "libvirtd" ];
       packages = with pkgs; [];
     };
   };
 
   # Enable automatic login for the user.
-  services.getty.autologinUser = "amper";
+  services.getty.autologinUser = "outworld";
 }
